@@ -1,0 +1,77 @@
+Show databases;
+
+Create database Inventory_Management_System;
+
+Use database Inventory_Management_System;
+
+Create Table Administration(
+	user_id int primary key not null Auto_increment,
+	user_position varchar(50),
+	user_name varchar(50),
+	user_email varchar(50),
+	user_password int,
+	user_mobile int,
+	user_location varchar(50));
+
+Create Table Customer(
+	customer_id int primary key not null Auto_increment,
+	customer_name varchar(50),
+	customer_mobile int,
+	customer_location varchar(50),
+	customer_email varchar(50),
+	customer_password int);
+
+Create Table Stocks(
+	Product_id int primary key not null Auto_increment,
+	Product_name varchar(50),
+	Available_stock varchar(50));
+
+Create Table Payment(
+	payment_id int primary key not null Auto_increment,
+	order_id int,
+	Foreign key (order_id) references Order_info(order_id),
+	payment_status varchar(50),
+	payment_date DATE);
+
+Create Table Sales(
+    sales_id int primary key not null Auto_increment,
+    sales_revenue varchar(50),
+    supplier_id int,
+    Foreign key (supplier_id) references Supplier(supplier_id),
+    customer_id int,
+    Foreign key (customer_id) references Customer(customer_id),
+    product_id int,
+    Foreign key (product_id) references Product(product_id),
+    sales_date DATE,
+    sales_quantity int);
+
+Create Table Supplier(
+    supplier_id int primary key not null Auto_increment,
+    supplier_name varchar(50),
+    supplier_mobile int,
+    supplier_location varchar(50),
+    supplier_email varchar(50),
+    supplier_password int);
+
+Create Table Product(
+   product_id int primary key not null Auto_increment,
+   product_name varchar(50),
+   product_description varchar(50),
+   product_price int,
+   product_brand varchar(50));
+
+Create Table Order_info(
+    order_id int primary key not null Auto_increment,
+    order_status varchar(50),
+    order_date DATE,
+    order_quantity int,
+    order_TotalPrice int);
+
+Desc Administration;
+Desc Supplier;
+Desc Product;
+Desc Order_info;
+Desc Sales;
+Desc Payment;
+Desc Customer;
+Desc Stocks;
