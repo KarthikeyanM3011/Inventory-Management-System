@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="addpage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="737.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.crud_operations">
+   <children>
+      <Text layoutX="73.0" layoutY="138.0" stroke="#fafafa" strokeType="OUTSIDE" strokeWidth="3.0" text="ProductID" wrappingWidth="173.6437225341797">
+         <font> 
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="74.0" layoutY="234.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="3.0" text="PruductName" wrappingWidth="234.44369506835938">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="72.0" layoutY="343.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="3.0" text="ProductDescription" wrappingWidth="324.0436706542969">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="73.0" layoutY="184.0" stroke="#efefef" strokeType="OUTSIDE" strokeWidth="3.0" text="ProductPrice" wrappingWidth="220.04367065429688">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="73.0" layoutY="287.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="3.0" text="ProductBrand" wrappingWidth="234.44369506835938">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="225.0" layoutY="63.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="4.0" text="New Product" textAlignment="JUSTIFY">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Text>
+      <TextField fx:id="ProductName" layoutX="333.0" layoutY="210.0" />
+      <TextField fx:id="ProductID" layoutX="333.0" layoutY="115.0" />
+      <TextField fx:id="ProductPrice" layoutX="333.0" layoutY="161.0" />
+      <TextField fx:id="ProductDesc" layoutX="333.0" layoutY="317.0" prefHeight="55.0" prefWidth="174.0" />
+      <TextField fx:id="ProductBrand" layoutX="333.0" layoutY="261.0" />
+      <Button fx:id="add" layoutX="285.0" layoutY="411.0" mnemonicParsing="false" onMouseClicked="#addproduct" prefHeight="40.0" prefWidth="78.0" style="-fx-background-color: green;" stylesheets="@application.css" text="ADD" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="25.0" layoutY="35.0" mnemonicParsing="false" onMouseClicked="#navigateBack" style="-fx-background-color: black;" text="←" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

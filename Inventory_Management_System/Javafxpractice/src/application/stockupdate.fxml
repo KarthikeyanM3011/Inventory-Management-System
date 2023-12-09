@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="updatepage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="767.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.stkupdate">
+   <children>
+      <Pane layoutX="239.0" layoutY="56.0" prefHeight="83.0" prefWidth="246.0" style="-fx-background-color: black; -fx-background-radius: 50;">
+         <children>
+            <Text fill="WHITE" layoutX="26.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STOCKS" wrappingWidth="202.4000000000001">
+               <font>
+                  <Font name="System Bold" size="52.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Text layoutX="193.0" layoutY="258.0" stroke="RED" strokeType="INSIDE" strokeWidth="2.0" text="PRODUCT ID" wrappingWidth="181.33660888671875">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <TextField fx:id="pid" layoutX="415.0" layoutY="225.0" prefHeight="48.0" prefWidth="98.0" />
+      <Button layoutX="259.0" layoutY="429.0" mnemonicParsing="false" onMouseClicked="#updstock" prefHeight="48.0" prefWidth="202.0" style="-fx-background-color: GREEN; -fx-background-radius: 10;" text="UPDATE STOCKS" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Text layoutX="221.0" layoutY="321.0" stroke="RED" strokeType="INSIDE" strokeWidth="2.0" text="QUANTITY" wrappingWidth="153.33660888671875">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <TextField fx:id="pquantity" layoutX="412.0" layoutY="287.0" prefHeight="48.0" prefWidth="98.0" />
+      <Button layoutX="40.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#navigatestock" text="Back" />
+   </children>
+</AnchorPane>

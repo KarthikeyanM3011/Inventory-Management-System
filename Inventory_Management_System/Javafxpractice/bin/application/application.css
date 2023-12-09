@@ -1,0 +1,48 @@
+#LoginpageRoot {
+    -fx-background-color: linear-gradient(to bottom, #E0D2C7, #44B09E);
+}
+
+#lefthome {
+    -fx-background-color: linear-gradient(to bottom, #0F3443,#34E89E);
+}
+
+/* Normal state */
+#add, #update, #remove {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+}
+
+/* Hover state */
+#add:hover, #update:hover, #remove:hover {
+    -fx-background-color: #45a049;
+}
+
+/* Pressed state */
+#add:pressed, #update:pressed, #remove:pressed {
+    -fx-background-color: #3e8e41; 
+}
+
+#loginbutton ,#button{
+    -fx-background-color: #4CAF50; 
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold; 
+    -fx-padding: 10px 20px; 
+    -fx-border-radius: 5px;
+    -fx-cursor: hand; 
+}
+
+#loginbutton:hover {
+    -fx-background-color: #45a049;
+}
+
+#addpage, #deletepage,#updatepage,#stockpage {
+
+    -fx-background-repeat: stretch;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-color: linear-gradient(to bottom, #0F3443,#34E89E);
+}
+

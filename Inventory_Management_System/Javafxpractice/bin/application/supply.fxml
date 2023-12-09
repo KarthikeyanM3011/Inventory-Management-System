@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="767.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.supplycontrol">
+   <children>
+      <Pane layoutX="194.0" layoutY="31.0" prefHeight="83.0" prefWidth="378.0" style="-fx-background-color: black; -fx-background-radius: 50;">
+         <children>
+            <Text fill="WHITE" layoutX="26.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD SUPPLY" wrappingWidth="326.4000000000001">
+               <font>
+                  <Font name="System Bold" size="52.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Text layoutX="215.0" layoutY="219.0" stroke="RED" strokeType="INSIDE" strokeWidth="2.0" text="Supplier id" wrappingWidth="167.73663330078125">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <TextField layoutX="420.0" layoutY="189.0" prefHeight="40.0" prefWidth="118.0" />
+      <Button layoutX="284.0" layoutY="455.0" mnemonicParsing="false" onMouseClicked="#navigatesupply" prefHeight="56.0" prefWidth="234.0" style="-fx-background-color: GREEN; -fx-background-radius: 10;" text="ADD SUPPLIES">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Button>
+      <Text layoutX="220.0" layoutY="285.0" stroke="RED" strokeType="INSIDE" strokeWidth="2.0" text="Payment id" wrappingWidth="167.73663330078125">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <TextField layoutX="420.0" layoutY="254.0" prefHeight="40.0" prefWidth="118.0" />
+      <Text layoutX="254.0" layoutY="352.0" stroke="RED" strokeType="INSIDE" strokeWidth="2.0" text="Quantity" wrappingWidth="129.33660888671875">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <TextField layoutX="420.0" layoutY="322.0" prefHeight="40.0" prefWidth="118.0" />
+   </children>
+</AnchorPane>
